@@ -1,0 +1,23 @@
+const express = require('express');
+const router = express.Router();
+
+//get is to fetch data
+//post is submitting to the server
+//put is to update on the server
+//delete is to delete
+
+// @route   GET  api/auth
+// @desc    Get logged in user
+// @access  Private
+router.get('/', (req, res) => {
+    res.send('Get logged in user');
+});
+
+// @route   POST  api/auth
+// @desc    Auth user and get token
+// @access  Public
+router.post('/', (req, res) => {
+    res.send('Log in user');
+});
+
+module.exports = router;
