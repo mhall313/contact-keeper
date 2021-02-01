@@ -7,6 +7,7 @@ const config = require('config');
 
 const User = require('../models/User');
 
+//Notes on Routes:
 //get is to fetch data
 //post is submitting to the server
 //put is to update on the server
@@ -61,7 +62,7 @@ async (req, res) => {
             expiresIn: 360000
         }, (err, token) => {
             if(err) throw err;
-            res.json({ token});
+            res.json({ token });
         });
 
     } catch (err) {

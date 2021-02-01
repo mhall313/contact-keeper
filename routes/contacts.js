@@ -1,10 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-//get is to fetch data
-//post is submitting to the server
-//put is to update on the server
-//delete is to delete
 
 // @route   GET  api/contacts
 // @desc    Get all users contacts
